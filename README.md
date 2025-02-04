@@ -1,0 +1,2 @@
+# AOC_LeonardoCastroAlefeAlves_UFRR_2024
+Projeto Final AOC
