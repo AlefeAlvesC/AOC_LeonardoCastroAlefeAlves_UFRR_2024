@@ -11,20 +11,41 @@
 ---
 
 ## Índice
-- [Laboratório de circuitos - Codificação e Simulações](#laboratório-de-circuitos---codificação-e-simulações)
+- [AOC\_LeonardoCastroAlefeAlves\_UFRR\_2024](#aoc_leonardocastroalefealves_ufrr_2024)
+  - [Projeto Final AOC](#projeto-final-aoc)
   - [Índice](#índice)
+  - [Datapath](#datapath)
+  - [Instruções](#instruções)
+  - [Processador](#processador)
+  - [Simulações](#simulações)
   - [Relatório](#relatório)
   - [Referências](#referências)
 
 ---
-## Relatório
-> 
-* Para uma vizualização mais detalhada do relatório: 
-[Acesse o relatório]()
+
+## Datapath
 
 ---
 
-## Componentes
+## Instruções
+
+---
+
+## Processador
+
+---
+
+## Simulações
+
+---
+
+## Relatório
+> 
+* Para uma vizualização mais detalhada do relatório: 
+[Acesse o relatório](/relatorio/relatório-trabalho-final-aoc.docx)
+<!--
+Em desenvolvimento
+-->
 
 ---
 
