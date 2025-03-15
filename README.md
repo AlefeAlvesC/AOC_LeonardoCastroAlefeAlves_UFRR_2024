@@ -15,6 +15,7 @@
   - [Projeto Final AOC](#projeto-final-aoc)
   - [Índice](#índice)
   - [Datapath](#datapath)
+  - [](#)
   - [Instruções](#instruções)
   - [Processador](#processador)
   - [Simulações](#simulações)
@@ -25,9 +26,13 @@
 
 ## Datapath
 
+![Imagem do Datapath](/datapath/datapath-view.png)
 ---
 
 ## Instruções
+
+> * Para saber o formatado dos tipos de instruções acesse o link abaixo:
+[Acesse as instruções](/instrucoes/instruções.pdf)
 
 ---
 
@@ -40,12 +45,9 @@
 ---
 
 ## Relatório
-> 
-* Para uma vizualização mais detalhada do relatório: 
+
+> * Para uma vizualização mais detalhada do relatório: 
 [Acesse o relatório](/relatorio/relatório-trabalho-final-aoc.docx)
-<!--
-Em desenvolvimento
--->
 
 ---
 
