@@ -20,6 +20,12 @@
       - [Tipo I](#tipo-i)
       - [Tipo J](#tipo-j)
   - [Processador](#processador)
+    - [PC](#pc)
+    - [Memória de instruções](#memória-de-instruções)
+    - [Somador de 8 bits](#somador-de-8-bits)
+    - [Extensor de bits 3x8](#extensor-de-bits-3x8)
+    - [Banco de registradores](#banco-de-registradores)
+    - [Unidade de Controle](#unidade-de-controle)
   - [Simulações](#simulações)
   - [Relatório](#relatório)
   - [Referências](#referências)
@@ -91,6 +97,35 @@
 ---
 
 ## Processador
+### PC
+>**O componente PC é responsável por armazenar e passar o endereço da próxima linha de código do programa que deve ser executada. Ele atua como um registrador paralelo que atualiza sua saída com base no sinal de clock e no sinal de reset.**
+
+![pc](/rtl-viewers/pc_view.png)
+
+### Memória de instruções
+>**O componente memoria_instrucao é responsável por armazenar as instruções de um programa e fornecer a instrução correspondente ao endereço solicitado. Ele funciona como uma memória de leitura, onde o endereço de entrada é usado para buscar a instrução armazenada naquela posição.**
+
+![memoria de instruções](/rtl-viewers/memoria_instrucoes_view.png)
+
+### Somador de 8 bits
+>**O componente somador é responsável por realizar a soma de dois valores de entrada e fornecer o resultado na saída.**
+
+![somador](/rtl-viewers/somador_view.png)
+
+### Extensor de bits 3x8
+>**O componente extensor_3x8 é responsável por estender um sinal de 3 bits para um sinal de 8 bits, preenchendo os bits mais significativos com zeros.**
+
+![extensor](/rtl-viewers/extensor_3x8_view.png)
+
+### Banco de registradores
+>**O componente banco_de_registradores é responsável por armazenar e gerenciar um conjunto de registradores que podem ser lidos e escritos durante a execução de um programa. Ele é uma parte essencial de um processador, permitindo o armazenamento temporário de dados e a transferência de valores entre diferentes partes do sistema.**
+
+![banco de registradores](/rtl-viewers/banco_registradores-view.png)
+
+### Unidade de Controle
+>**O componente unidade_controle é responsável por decodificar o opCode de uma instrução e gerar os sinais de controle necessários para a execução dessa instrução em um processador. Ele atua como o cérebro do processador, coordenando as operações da Unidade Lógica e Aritmética (ULA), da memória, e dos registradores.**
+
+![unidade de controle](/rtl-viewers/unidade_controle_view.png)
 
 ---
 
