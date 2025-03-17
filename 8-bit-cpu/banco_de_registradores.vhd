@@ -1,9 +1,10 @@
 -- Banco de registradores
-
+--Área de importe de bibliotecas
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
+--Área da entidade, onde definimos as principais entradas e saidas do circuito
 ENTITY banco_de_registradores IS
     
     generic( 
@@ -19,6 +20,7 @@ ENTITY banco_de_registradores IS
     );
 END banco_de_registradores;
 
+--Área da arquitetura, onde definimos a lógica do circuito
 ARCHITECTURE BEHAVIOR OF banco_de_registradores IS
 TYPE banco_de_registradores IS ARRAY(0 TO 2**E-1) OF STD_LOGIC_VECTOR(N-1 DOWNTO 0);
 SIGNAL MEM_BANCO_REG : banco_de_registradores;
