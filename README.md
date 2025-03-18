@@ -105,7 +105,7 @@
 | 100    | beq               | J       | Branch if equal           |
 | 101    | j                 | J       | Jump Incondicional        |
 
-<div style="font-size: 20px; font-weight: bold; color: black;">Para uma vizualização mais detalhada do relatório:</div
+<div style="font-size: 20px; font-weight: bold; color: black;">Para uma vizualização mais detalhada das instruções:</div
 
 * [Acesse as instruções](/instrucoes/instruções.pdf)
 
