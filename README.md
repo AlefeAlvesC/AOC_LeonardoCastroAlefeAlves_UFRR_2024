@@ -32,6 +32,12 @@
     - [Memória de dados](#memória-de-dados)
     - [ULA](#ula)
   - [Simulações](#simulações)
+    - [Instruções do tipo R](#instruções-do-tipo-r)
+      - [Waveform da instruções do tipo R](#waveform-da-instruções-do-tipo-r)
+    - [Instruções do tipo I](#instruções-do-tipo-i)
+      - [Waveform da instruções do tipo I](#waveform-da-instruções-do-tipo-i)
+    - [Instruções do tipo J](#instruções-do-tipo-j)
+      - [Waveform da instruções do tipo J](#waveform-da-instruções-do-tipo-j)
   - [Relatório](#relatório)
   - [Referências](#referências)
 
@@ -165,6 +171,20 @@
 ---
 
 ## Simulações
+### Instruções do tipo R
+![Tipo I](/simulacao/intsrucoes_r.png)
+#### Waveform da instruções do tipo R
+![waveform](/simulacao/intsrucoes_r.png)
+
+### Instruções do tipo I
+![waveform](/simulacao/instrucoes_i.png)
+#### Waveform da instruções do tipo I
+![waveform](/simulacao/waveform_i.png)
+
+### Instruções do tipo J
+![Tipo I](/simulacao/instrucoes_beq_jump.png)
+#### Waveform da instruções do tipo J
+![waveform](/simulacao/waveform_beq_jump.png)
 
 ---
 
