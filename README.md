@@ -19,13 +19,18 @@
       - [Tipo R](#tipo-r)
       - [Tipo I](#tipo-i)
       - [Tipo J](#tipo-j)
+      - [Opcodes do processador](#opcodes-do-processador)
   - [Processador](#processador)
     - [PC](#pc)
     - [Memória de instruções](#memória-de-instruções)
     - [Somador de 8 bits](#somador-de-8-bits)
     - [Extensor de bits 3x8](#extensor-de-bits-3x8)
+    - [Extensor de bits 5x8](#extensor-de-bits-5x8)
     - [Banco de registradores](#banco-de-registradores)
     - [Unidade de Controle](#unidade-de-controle)
+    - [Multiplexador 2x1](#multiplexador-2x1)
+    - [Memória de dados](#memória-de-dados)
+    - [ULA](#ula)
   - [Simulações](#simulações)
   - [Relatório](#relatório)
   - [Referências](#referências)
@@ -90,6 +95,16 @@
 | 7 - 5  | 4 - 0 |
 |3 bits | 5 bits |
 
+#### Opcodes do processador
+| Opcode | Operação          | Formato | Significado               |
+|--------|-------------------|---------|---------------------------|
+| 000    | add               | R       | Soma                      |
+| 001    | sub               | R       | Subtração                 |
+| 010    | lw                | I       | Load Word                 |
+| 011    | sw                | I       | Store Word                |
+| 100    | beq               | J       | Branch if equal           |
+| 101    | j                 | J       | Jump Incondicional        |
+
 <div style="font-size: 20px; font-weight: bold; color: black;">Para uma vizualização mais detalhada do relatório:</div
 
 * [Acesse as instruções](/instrucoes/instruções.pdf)
@@ -117,6 +132,11 @@
 
 ![extensor](/rtl-viewers/extensor_3x8_view.png)
 
+### Extensor de bits 5x8
+>**O componente extensor_5x8 é responsável por estender um sinal de 5 bits para um sinal de 8 bits, preenchendo os bits mais significativos com zeros.**
+
+![extensor](/rtl-viewers/extensor_5x8_view.png)
+
 ### Banco de registradores
 >**O componente banco_de_registradores é responsável por armazenar e gerenciar um conjunto de registradores que podem ser lidos e escritos durante a execução de um programa. Ele é uma parte essencial de um processador, permitindo o armazenamento temporário de dados e a transferência de valores entre diferentes partes do sistema.**
 
@@ -126,6 +146,21 @@
 >**O componente unidade_controle é responsável por decodificar o opCode de uma instrução e gerar os sinais de controle necessários para a execução dessa instrução em um processador. Ele atua como o cérebro do processador, coordenando as operações da Unidade Lógica e Aritmética (ULA), da memória, e dos registradores.**
 
 ![unidade de controle](/rtl-viewers/unidade_controle_view.png)
+
+### Multiplexador 2x1
+>**O componente mux_2x1 é um multiplexador de 2 para 1 que seleciona entre duas entradas de 8 bits com base em um sinal de seleção. Ele é utilizado para escolher entre dois sinais de entrada e direcionar um deles para a saída, dependendo do valor do sinal de controle.**
+
+![unidade de controle](/rtl-viewers/multiplexador_2x1_view.png)
+
+### Memória de dados
+>**O componente memoria_dados é responsável por armazenar e gerenciar dados em uma memória de acesso aleatório (RAM). Ele permite a leitura e escrita de dados em endereços específicos da memória, com base em sinais de controle.**
+
+![unidade de controle](/rtl-viewers/memoria_dados_view.png)
+
+### ULA
+>**O componente ula é responsável por realizar operações aritméticas e lógicas em dois operandos de 8 bits. Neste caso, a ULA suporta duas operações: soma e subtração. Além disso, ela gera um sinal de saída zero que indica se o resultado da operação é zero.**
+
+![unidade de controle](/rtl-viewers/ula_view.png)
 
 ---
 
