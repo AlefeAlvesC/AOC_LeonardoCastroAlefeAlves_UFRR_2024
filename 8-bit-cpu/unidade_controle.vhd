@@ -90,14 +90,14 @@ BEGIN
 				RegWrite	<=	'0';
 			--outros
 			when others => 
-				Jump 		<= '0';
-				Branch	    <=	'0';
-				MemRead	    <=	'0';
-				MemtoReg	<=	'0';
-				ALUOp		<=	'0';
-				MemWrite	<=	'0';
-				ALUSrc	    <=	'0';
-				RegWrite	<=	'0';	
+				Jump 		<= 'X';
+				Branch	    <=	'X';
+				MemRead	    <=	'X';
+				MemtoReg	<=	'X';
+				ALUOp		<=	'X';
+				MemWrite	<=	'X';
+				ALUSrc	    <=	'X';
+				RegWrite	<=	'X';	
 		
 		end case;
 	

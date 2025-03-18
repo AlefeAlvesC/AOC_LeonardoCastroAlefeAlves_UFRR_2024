@@ -26,8 +26,14 @@ ARCHITECTURE behavioral OF memoria_dados IS
 	signal lerDado_temp	:	std_logic_vector(n-1 downto 0);
 	
 	type ram is array(0 to 2**n-1) of std_logic_vector(n-1 downto 0);--Definindo um novo tipo de dado do tipo memoria
-	signal mem_dados: ram	:=	(	others => (others => '0'));
+	signal mem_dados: ram	:=	(
+		"00000101",
+		"00000111",
+		"00000111",
 	
+	
+		others => (others => '0')
+	);
 BEGIN
 	
 	lerDado <= lerDado_temp;

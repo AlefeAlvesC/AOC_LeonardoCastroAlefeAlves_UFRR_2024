@@ -23,7 +23,12 @@ END banco_de_registradores;
 --Área da arquitetura, onde definimos a lógica do circuito
 ARCHITECTURE BEHAVIOR OF banco_de_registradores IS
 TYPE banco_de_registradores IS ARRAY(0 TO 2**E-1) OF STD_LOGIC_VECTOR(N-1 DOWNTO 0);
-SIGNAL MEM_BANCO_REG : banco_de_registradores;
+SIGNAL MEM_BANCO_REG : banco_de_registradores	:=	(	
+    "00000000",
+    "00000000",
+    "00000000",
+    "00000000"
+);
 BEGIN
     PROCESS(CLOCK,REG1_IN,REG2_IN,MEM_BANCO_REG)
     BEGIN
