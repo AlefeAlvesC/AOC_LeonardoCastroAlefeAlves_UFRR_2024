@@ -174,7 +174,7 @@
 ### Instruções do tipo R
 ![Tipo I](/simulacao/intsrucoes_r.png)
 #### Waveform da instruções do tipo R
-![waveform](/simulacao/intsrucoes_r.png)
+![waveform](/simulacao/waveform_r.png)
 
 ### Instruções do tipo I
 ![waveform](/simulacao/instrucoes_i.png)
