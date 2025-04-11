@@ -140,7 +140,7 @@
 ### Banco de registradores
 >**O componente banco_de_registradores é responsável por armazenar e gerenciar um conjunto de registradores que podem ser lidos e escritos durante a execução de um programa. Ele é uma parte essencial de um processador, permitindo o armazenamento temporário de dados e a transferência de valores entre diferentes partes do sistema.**
 
-![banco de registradores](/rtl-viewers/banco_registradores-view.png)
+![banco de registradores](/rtl-viewers/banco_registradores_view.png)
 
 ### Unidade de Controle
 >**O componente unidade_controle é responsável por decodificar o opCode de uma instrução e gerar os sinais de controle necessários para a execução dessa instrução em um processador. Ele atua como o cérebro do processador, coordenando as operações da Unidade Lógica e Aritmética (ULA), da memória, e dos registradores.**
