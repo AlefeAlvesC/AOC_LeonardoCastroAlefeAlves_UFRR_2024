@@ -20,15 +20,18 @@ ARCHITECTURE behavioral OF memoria_instrucao IS
 	type instrucoes is array (0 to 2**n-1) of std_logic_vector(n-1 downto 0);--Criando um novo tipo, para instanciar uma memoria
 	
 	signal	memoria	: instrucoes := (	
-		"01000000",--Instrução 1: 	lw $s0, 0($s0);<=Carrega o valor da posição 0 da memoria para o reg 0
-		"01001000",--Instrução 2:	lw $s1, 0($s1);<=Carrega o valor da posição 1 da memoria para o reg 1
-		"01010000",--Instrução 3:	lw $s2, 0($s2);<=Carrega o valor da posição 3 da memoria para o reg 2
-		"10010100",--Instrução 4:	beq $s3, inicio;<=Compara reg3 ao reg0 e pula para o fim do programa 
-		"00000010",--Instrução 5:	add $s0, $s0, $s1; 
-		"10101000",--Instrução 6:	jump 1000;<= Pula pra 8 instrução;
-		"00110010",--Instrução 7:	sub $s2, $s2, $s1;<=Nunca executada.
+		"01000001",--Instrução 0: 	lw $s0, 1($s0);		<=Carrega o valor da posição 1 da memoria para o reg 0
+		"01011011",--Instrução 1:	lw $s3, 3($s3);		<=Carrega o valor da posição 3 da memoria para o reg 3
 												
-		others => (others => '1' )--Instruções Inválidas
+		"00010110",--Instrução 2:	add $s2, $s2, $s3;	<=Soma os conteudos de s2 e s3 e salva em s2 
+		"10010011",--Instrução 3:	beq $s2, FIM;		<=Compara o conteudo de s2 com s0(padrão), se for igual pula para o fim
+		"00011100",--Instrução 4:	add $s3, $s3, $s2;	<=Soma os conteudos de s3 e s2 e salva em s3
+		"10011001",--Instrução 5:	beq $s3, FIM;		<=Compara o conteudo de s3 com s0(padrão), se for igual pula para o fim
+											
+		"10100010",--Instrução 6: 	jump loop;			<=Loop que sempre vai para a instrução 2
+		"01111000",--Instrução 7:	sw $s3, 0($s3);		<=Carrega o valor da posição 3 do banco para a memória na posição 233(valor no reg 3). Instrução para qual o beq redireciona
+												
+		others => (others => '1')--Instruções Inválidas ou fim do programa.
 	);
 BEGIN
 
