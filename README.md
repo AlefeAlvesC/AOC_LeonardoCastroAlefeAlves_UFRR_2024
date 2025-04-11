@@ -78,15 +78,9 @@
 | 7 - 5  | 4 - 3 | 2 - 0 |
 |3 bits |2 bits | 3 bits |
 
-**Beq**: Instruções de desvio condicional que comparam dois registradores (rs e rt) e pulam para um endereço se forem iguais.
+**Beq**: Instruções de desvio condicional que comparam dois registradores (rs e rt onde rt é sempre o registrador 0) e pulam para um endereço se forem iguais.
 
 **1° Instrução**
-| Opcode | rs| rt |
-|--------|------|--------|
-| 7 - 5  | 4 - 3 | 2 - 1 |
-|3 bits |2 bits | 2 bits |
-
-**2° Instrução**
 | Opcode | rs| Adress |
 |--------|------|--------|
 | 7 - 5  | 4 - 3 | 2 - 0 |
