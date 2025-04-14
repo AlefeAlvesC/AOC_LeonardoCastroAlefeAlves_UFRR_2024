@@ -38,6 +38,8 @@
       - [Waveform da instruções do tipo I](#waveform-da-instruções-do-tipo-i)
     - [Instruções do tipo J](#instruções-do-tipo-j)
       - [Waveform da instruções do tipo J](#waveform-da-instruções-do-tipo-j)
+    - [Programa Final - Fibonacci](#programa-final---fibonacci)
+    - [Waveform do programa final](#waveform-do-programa-final)
   - [Relatório](#relatório)
   - [Referências](#referências)
 
@@ -179,6 +181,11 @@
 ![Tipo I](/simulacao/instrucoes_beq_jump.png)
 #### Waveform da instruções do tipo J
 ![waveform](/simulacao/waveform_beq_jump.png)
+
+### Programa Final - Fibonacci
+![Fibonacci](/simulacao/intrucoes_fibonacci.png)
+### Waveform do programa final
+![waveform](/simulacao/waveform_fibonacci.png)
 
 ---
 
