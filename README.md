@@ -183,7 +183,7 @@
 ![waveform](/simulacao/waveform_beq_jump.png)
 
 ### Programa Final - Fibonacci
-![Fibonacci](/simulacao/intrucoes_fibonacci.png)
+![Fibonacci](/simulacao/instrucoes_fibonacci.png)
 ### Waveform do programa final
 ![waveform](/simulacao/waveform_fibonacci.png)
 
